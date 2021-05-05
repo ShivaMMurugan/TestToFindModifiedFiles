@@ -30,9 +30,11 @@ if not os.path.isdir(base):
 files_original = 'files_original'
 os.popen('cp -r {}/{} tmp'.format(files_original, return_val))
 
+
 def remove_folder(folder_name):
 	shutil.rmtree(folder_name)
 # remove_folder(base)
+shutil.rmtree(base)
 # with open(os.path.join(base, return_val), 'r') as f:
 # 	data = json.load(f)
 # 	print(data)
